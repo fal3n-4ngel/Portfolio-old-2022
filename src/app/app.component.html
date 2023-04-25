@@ -1,4 +1,15 @@
-<div class="w-full mx-auto  h-full items-center bg-black">
+<script>
+  function leftScroll() {
+    const left = document.querySelector(".Scroll");
+    left.scrollBy(200, 0);
+  }
+  function rightScroll() {
+    const right = document.querySelector(".Scroll");
+    right.scrollBy(-200, 0);
+  }
+</script>
+
+<div class="w-full mx-auto h-full items-center bg-black">
   <div class="m-auto ease-in transition-all">
     <nav class="z-55 m-auto w-full fixed">
       <div class="m-auto items-center justify-center w-10/12">
@@ -36,8 +47,8 @@
           I do cool stuffs ig!?
         </div>
         <div class="mt-6 flex text-slate-400 text-lg max-w-[40rem]">
-          I am a B.Tech in Computer Science and Engineering Sophomore, skilled in
-          app and web development. I like coding dumb and interesting stuffs.
+          I am a B.Tech in Computer Science and Engineering Sophomore, skilled
+          in app and web development. I like coding dumb and interesting stuffs.
         </div>
 
         <div>
@@ -156,223 +167,240 @@
       </div>
       <div class="mt-10 text-6xl font-light text-slate-400">My Portfolio</div>
 
-      <div
-        class="mt-12 md:max-h-[21rem] bg-slate-100 flex flex-col max-w-[30rem] md:max-w-[45em] md:flex-row border border-black items-center justify-center m-auto"
-      >
-        <div
-          class="bg-white w-full items-center justify-center m-auto border-b-2 md:border-r-2"
-        >
-          <img
-            class="w-11/12 md:max-w-md max-w-xs m-auto"
-            src="../assets/drishti.png"
-          />
-        </div>
-        <div class="flex flex-col md:w-10/12 w-10/12 m-6">
-          <div class="text-3xl">Drishti</div>
-          <div class="mt-4 text-slate-500">
-            Drishti is a software created as a project for Define hack 2022,
-            which we decided to build a little more. This app aims to make
-            reporting and spreading the news of accidents and dangers easier and
-            effective. Uses: Flutter, Firebase( with google analytics /
-            crashlytics ), MongoDB, Openweather Api
-          </div>
-          <a href="https://github.com/fal3n-4ngel/Drishti-Client">
-            <button
-              class="mt-4 justify-end items-end w-36 bg-transparent hover:bg-slate-900 bg-slate-100 font-semibold hover:text-white py-2 px-4 border border-slate-600 hover:border-transparent rounded"
-            >
-              View
-            </button>
-          </a>
-        </div>
-      </div>
+      <div class="flex space-x-6">
+        <a href="#1" class="mt-[10rem] text-white text-6xl"><</a>
 
-      <div
-        class="mt-12 md:max-h-[21rem] bg-slate-100 flex flex-col max-w-[30rem] md:max-w-[45em] md:flex-row border border-black items-center justify-center m-auto"
-      >
         <div
-          class="bg-white block md:hidden visible md:invisible w-full items-center justify-center m-auto border-b-2 md:border-r-2"
+          id="Scroll "
+          class="mx-auto overflow-auto flex max-w-8xl gap-6 p-6 scrollbar-hide scroll-smooth"
         >
-          <img
-            class="md:max-w-md w-11/12 max-w-xs m-auto"
-            src="../assets/ctracker.png"
-          />
-        </div>
-        <div class="flex flex-col md:w-10/12 w-10/12 m-6">
-          <div class="text-3xl">C Tracker</div>
-          <div class="mt-4 text-slate-500">
-            Ahem... C-Tracker or Curriculum-Tracker is a todo App themed for
-            academic purposes , developed as a micro project for Semester 3
-            Object Oriented Java. Simply a fancy todo app that we coded in a
-            single sleepless night. Uses: Java , Swing , sqllite
-          </div>
-          <a href="https://github.com/fal3n-4ngel/CTracker">
-            <button
-              class="mt-4 justify-end items-end w-36 bg-transparent hover:bg-slate-900 bg-slate-100 font-semibold hover:text-white py-2 px-4 border border-slate-600 hover:border-transparent rounded"
-            >
-              View
-            </button>
-          </a>
-        </div>
-        <div
-          class="bg-white hidden md:block invisible md:visible w-full items-center justify-center m-auto border-b-2 md:border-r-2"
-        >
-          <img
-            class="md:max-w-md w-11/12 max-w-xs m-auto"
-            src="../assets/ctracker.png"
-          />
-        </div>
-      </div>
+          <article
+            id="1"
+            class="rounded-xl min-w-[25rem] bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="object-contain h-48 w-[196px]"
+                  src="../assets/drishti.png"
+                  alt="Hotel Photo"
+                />
+              </div>
 
-      <div
-        class="mt-12 md:max-h-[21rem] bg-slate-100 flex flex-col max-w-[30rem] md:max-w-[45em] md:flex-row border border-black items-center justify-center m-auto"
-      >
-        <div
-          class="bg-white w-full items-center justify-center m-auto border-b-2 md:border-r-2"
-        >
-          <img
-            class="md:max-w-md w-11/12 max-w-xs m-auto"
-            src="../assets/id.png"
-          />
-        </div>
-        <div class="flex flex-col md:w-10/12 w-10/12 m-6">
-          <div class="text-3xl">MBCET Slip App</div>
-          <div class="mt-4 text-slate-500">
-            Contributed to MBCET Slip app by creating an animated Virtual Idcard
-            screen using Jetpack Compose. Created by GDSC MBCET community as a
-            project for Compose Camp lead by Ben Goerge Netto. Uses: Jetpack
-            Compose
-          </div>
-          <a href="https://github.com/fal3n-4ngel/komi">
-            <button
-              class="mt-4 justify-end items-end w-36 bg-transparent hover:bg-slate-900 bg-slate-100 font-semibold hover:text-white py-2 px-4 border border-slate-600 hover:border-transparent rounded"
-            >
-              View
-            </button>
-          </a>
-        </div>
-      </div>
+              <div class="mt-1 p-2">
+                <h2 class="text-slate-700">Drishti</h2>
+                <p class="mt-1 text-sm text-slate-400">
+                  Drishti is a software created as a project for Define hack
+                  2022, which we decided to build a little more. This app aims
+                  to make reporting and spreading the news of accidents and
+                  dangers easier and effective. Uses: Flutter, Firebase( with
+                  google analytics / crashlytics ), MongoDB, Openweather Api
+                </p>
 
-      <div
-        class="mt-12 md:max-h-[21rem] bg-slate-100 flex flex-col max-w-[30rem] md:max-w-[45em] md:flex-row border border-black items-center justify-center m-auto"
-      >
-        <div
-          class="bg-white block md:hidden visible md:invisible w-full items-center justify-center m-auto border-b-2 md:border-r-2"
-        >
-          <img
-            class="md:max-w-md w-11/12 max-w-xs m-auto"
-            src="../assets/komi.png"
-          />
+                <div class="mt-3 flex items-end justify-between">
+                  <div
+                    class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600"
+                  >
+                    <button class="text-sm">View</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="2"
+            class="rounded-xl min-w-[25rem] bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="object-cover h-48 w-[196px]"
+                  src="../assets/ctracker.png"
+                  alt="Hotel Photo"
+                />
+              </div>
+
+              <div class="mt-1 p-2">
+                <h2 class="text-slate-700">C Tracker</h2>
+                <p class="mt-1 text-sm text-slate-400">
+                  Ahem... C-Tracker or Curriculum-Tracker is a todo App themed
+                  for academic purposes , developed as a micro project for
+                  Semester 3 Object Oriented Java. Simply a fancy todo app that
+                  we coded in a single sleepless night. Uses: Java , Swing ,
+                  sqllite
+                </p>
+
+                <div class="mt-3 flex items-end justify-between">
+                  <div
+                    class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600"
+                  >
+                    <button class="text-sm">View</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="3"
+            class="rounded-xl min-w-[25rem] bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="object-cover h-48 w-[196px]"
+                  src="../assets/id.png"
+                  alt="Hotel Photo"
+                />
+              </div>
+
+              <div class="mt-1 p-2">
+                <h2 class="text-slate-700">MBCET Slip App</h2>
+                <p class="mt-1 text-sm text-slate-400">
+                  Contributed to MBCET Slip app by creating an animated Virtual
+                  Idcard screen using Jetpack Compose. Created by GDSC MBCET
+                  community as a project for Compose Camp lead by Ben Goerge
+                  Netto. Uses: Jetpack Compose
+                </p>
+
+                <div class="mt-3 flex items-end justify-between">
+                  <div
+                    class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600"
+                  >
+                    <button class="text-sm">View</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article
+            id="4"
+            class="rounded-xl min-w-[25rem] bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="object-cover h-48 w-[196px]"
+                  src="../assets//komi.png"
+                  alt="Hotel Photo"
+                />
+              </div>
+
+              <div class="mt-1 p-2">
+                <h2 class="text-slate-700">Anime search App</h2>
+                <p class="mt-1 text-sm text-slate-400">
+                  A simple anime searchingapp using flutter and anilist, return
+                  the details of the searched anime from anilist apilist with
+                  coverimage. Uses: Flutter, Anilist Api
+                </p>
+
+                <div class="mt-3 flex items-end justify-between">
+                  <div
+                    class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600"
+                  >
+                    <button class="text-sm">View</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          
         </div>
-        <div class="flex flex-col md:w-10/12 w-10/12 m-6">
-          <div class="text-3xl">Anime search App</div>
-          <div class="mt-4 text-slate-500">
-            A simple anime searchingapp using flutter and anilist, return the
-            details of the searched anime from anilist apilist with coverimage.
-            Uses: Flutter, Anilist Api
-          </div>
-          <a href="https://github.com/fal3n-4ngel/Slip-App-IdCard">
-            <button
-              class="mt-4 justify-end items-end w-36 bg-transparent hover:bg-slate-900 bg-slate-100 font-semibold hover:text-white py-2 px-4 border border-slate-600 hover:border-transparent rounded"
-            >
-              View
-            </button>
-          </a>
-        </div>
-        <div
-          class="bg-white hidden md:block invisible md:visible w-full items-center justify-center m-auto border-b-2 md:border-r-2"
-        >
-          <img
-            class="md:max-w-md w-11/12 max-w-xs m-auto"
-            src="../assets/komi.png"
-          />
-        </div>
+        <a href="#4" class="mt-[10rem] text-white text-6xl">></a>
       </div>
+      
     </div>
+
+    <footer id="contact" class="bg-black w-full">
+      <div
+        class="min-h-[15rem] items-center center flex flex-row justify-between"
+      >
+        <div
+          class="flex flex-col justify-between w-full max-w-screen-xl mx-auto space-x-8 p-4 md:py-8"
+        >
+          <div
+            class="flex justify-between w-full max-w-screen-xl mx-auto space-x-8"
+          >
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <a
+                href="https://github.com/fal3n-4ngel"
+                class="flex items-center mb-4 sm:mb-0"
+              >
+                <img
+                  src="../assets/github.svg"
+                  class="h-8 mr-3 fill-white"
+                  alt="Github"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >Github</span
+                >
+              </a>
+            </div>
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <a
+                href="https://www.linkedin.com/in/fal3n-4ngel/"
+                class="flex items-center mb-4 sm:mb-0"
+              >
+                <img
+                  src="../assets/linkedin.svg"
+                  class="h-8 mr-3 fill-white"
+                  alt="Github"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >LinkedIn</span
+                >
+              </a>
+            </div>
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <a
+                href="https://twitter.com/fal3n_4ngel"
+                class="flex items-center mb-4 sm:mb-0"
+              >
+                <img
+                  src="../assets/twitter.svg"
+                  class="h-8 mr-3 fill-white"
+                  alt="Github"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >Twitter</span
+                >
+              </a>
+            </div>
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <a
+                href="https://g.dev/fal3n-4ngel"
+                class="flex items-center mb-4 sm:mb-0"
+              >
+                <img
+                  src="../assets/code-solid.svg"
+                  class="h-8 mr-3 fill-white"
+                  alt="Github"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >G-Developers</span
+                >
+              </a>
+            </div>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <div
+            class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >
+            >© 2023
+            <a href="" class="hover:underline">Adithya Krishnan</a>. All Rights
+            Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-
-  <footer id="contact" class="bg-black w-full">
-    <div
-      class="min-h-[15rem] items-center center flex flex-row justify-between"
-    >
-      <div class="flex flex-col justify-between w-full max-w-screen-xl mx-auto space-x-8 p-4 md:py-8">
-        <div class="flex justify-between w-full max-w-screen-xl mx-auto space-x-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://github.com/fal3n-4ngel"
-              class="flex items-center mb-4 sm:mb-0"
-            >
-              <img
-                src="../assets/github.svg"
-                class="h-8 mr-3 fill-white"
-                alt="Github"
-              />
-              <span
-                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >Github</span
-              >
-            </a>
-          </div>
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://www.linkedin.com/in/fal3n-4ngel/"
-              class="flex items-center mb-4 sm:mb-0"
-            >
-              <img
-                src="../assets/linkedin.svg"
-                class="h-8 mr-3 fill-white"
-                alt="Github"
-              />
-              <span
-                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >LinkedIn</span
-              >
-            </a>
-          </div>
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://twitter.com/fal3n_4ngel"
-              class="flex items-center mb-4 sm:mb-0"
-            >
-              <img
-                src="../assets/twitter.svg"
-                class="h-8 mr-3 fill-white"
-                alt="Github"
-              />
-              <span
-                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >Twitter</span
-              >
-            </a>
-          </div>
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://g.dev/fal3n-4ngel"
-              class="flex items-center mb-4 sm:mb-0"
-            >
-              <img
-                src="../assets/code-solid.svg"
-                class="h-8 mr-3 fill-white"
-                alt="Github"
-              />
-              <span
-                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >G-Developers</span
-              >
-            </a>
-          </div>
-        </div>
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <div class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          >© 2023
-          <a href="" class="hover:underline"
-            >Adithya Krishnan</a
-          >. All Rights Reserved
-        </div>
-          
-          
-      </div>
-    </div>
-  </footer>
 </div>

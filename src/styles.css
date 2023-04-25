@@ -21,3 +21,20 @@ html,body{
     -ms-overflow-style: none;  
     scrollbar-width: none;  
 }
+
+.cover {
+    padding: 0px 30px;
+    position: relative;
+  }
+  .left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
